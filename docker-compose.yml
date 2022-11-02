@@ -18,10 +18,8 @@ services:
   db:
      image: postgres:13
      volumes:
-      - dev-db-data:/var/lib/postgresql/data
+      - /var/opt/data/db:/var/lib/postgresql/data
      environment:
+      - POSTGRES_DB=devdb
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-    
-volumes:
-   dev-db-data:
-
