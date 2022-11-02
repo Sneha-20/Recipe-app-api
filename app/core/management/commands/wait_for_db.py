@@ -18,7 +18,7 @@ class Command(BaseCommand):
         db_up = False
         while db_up is False:
             try:
-                print(os.environ.get('DB_PASSWORD'))
+               
                 self.check(databases=['default'])
                 db_up = True
             except (Psycopg2Error, OperationalError):
