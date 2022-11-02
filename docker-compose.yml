@@ -15,8 +15,7 @@ services:
     depends_on:
       - db
 
-<<<<<<< HEAD
-   db:
+  db:
      image: postgres:13
      volumes:
       - dev-db-data:/var/lib/postgresql/data
@@ -25,15 +24,4 @@ services:
     
 volumes:
    dev-db-data:
-=======
-  db:
-    image: postgres:13
-    volumes:
-     - dev-db-data:/var/lib/postgresql/data
-    environment: 
-     - POSTGRES_PASSWORD=postgres
-     
 
-volumes:
-  dev-db-data: 
->>>>>>> 00447ee5db49eb2f6b65771444b9480291aa3dad
