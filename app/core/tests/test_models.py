@@ -24,7 +24,7 @@ class ModelsTest(TestCase):
     
     def test_user_email_normalize(self):
         sample_test =[
-            ['test20@EXAMPLE.COM', 'test2-@example.com'],
+            ['test20@EXAMPLE.COM', 'test20@example.com'],
             ['Test20@Example.com', 'Test20@example.com'],
             ['TEST2@EXAMPLE.COM', 'TEST2@example.com'],
             ['test4@example.com', 'test4@example.com']
